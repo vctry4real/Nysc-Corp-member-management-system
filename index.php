@@ -17,7 +17,7 @@
     }
 
 .bg {
-  background-image: url("background.jpg");
+  background-image: url("nyscBackground.jpg");
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
