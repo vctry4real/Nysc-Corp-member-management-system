@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title> Employee Management System</title>
+    <title> Nysc Ogbomosho North Corper Management System</title>
     
     <link href="../resorce/css/style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                <div class="text-center">
-                <h2 class="pt-3"> Employee Management System </h2>
+                <h2 class="pt-3"> Nysc Ogbomosho North Corper Management System </h2>
                  </div>
                 
             </div>
@@ -105,11 +105,11 @@
 
                     <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Employee</span>
+                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Corper member</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./add-employee.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Employee</span></a></li>
-                            <li><a href="./manage-employee.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Employee</span></a></li>
+                            <li><a href="./add-corp-member.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Corp Member</span></a></li>
+                            <li><a href="./manage-corp-member.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Corp Member</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
                         </ul>
@@ -127,7 +127,7 @@
                     
                     <li>
                         <a href="./manage-leave.php" >
-                            <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Employee Leave</span>
+                            <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Corp Member Leave</span>
                         </a>
                     </li>
                     <li>

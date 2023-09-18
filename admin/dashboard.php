@@ -19,7 +19,7 @@ require_once "include/header.php";
         $total_admins = mysqli_query($conn , $select_admins);
 
         // total employee
-        $select_emp = "SELECT * FROM employee";
+        $select_emp = "SELECT * FROM corper";
         $total_emp = mysqli_query($conn , $select_emp);
 
         // employee on leave
@@ -45,8 +45,8 @@ require_once "include/header.php";
 
 
         // highest paid employee
-        $sql_highest_salary =  "SELECT * FROM employee ORDER BY salary DESC";
-        $emp_ = mysqli_query($conn , $sql_highest_salary);
+        $sql_ppa =  "SELECT * FROM corper ORDER BY ppa DESC";
+        $corp_ = mysqli_query($conn , $sql_ppa);
 
 
 
@@ -67,16 +67,16 @@ require_once "include/header.php";
         <div class="col-4">
             <div class="card shadow " style="width: 18rem;">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center">Employees</li>
-                    <li class="list-group-item">Total Employees : <?php echo mysqli_num_rows($total_emp); ?></li>
-                    <li class="list-group-item text-center"><a href="manage-employee.php"> <b>View All Employees</b></a></li>
+                    <li class="list-group-item text-center">Corp Members</li>
+                    <li class="list-group-item">Total Corp Members : <?php echo mysqli_num_rows($total_emp); ?></li>
+                    <li class="list-group-item text-center"><a href="manage-employee.php"> <b>View All Corp Member</b></a></li>
                 </ul>
             </div>
         </div>
         <div class="col-4">
             <div class="card shadow " style="width: 18rem;">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center">Employees on  Leave (Daywise)</li>
+                    <li class="list-group-item text-center">Corp Member on  Leave (Daywise)</li>
                     <li class="list-group-item">Today :  <?php echo $today_leave; ?>  </li>
                     <li class="list-group-item">Tomarrow :  <?php echo $tomarrow_leave; ?> </li>
                 </ul>
@@ -99,30 +99,30 @@ require_once "include/header.php";
     </div> -->
     <div class="row mt-5 bg-white shadow "> 
     <div class="col-12">
-            <div class=" text-center my-3 "> <h4>Employee Leadership Board</h4> </div>
+            <div class=" text-center my-3 "> <h4>Corp Member Serving In Ogbomosho</h4> </div>
             <table class="table  table-hover">
         <thead>
             <tr class="bg-dark">
             <th scope="col">S.No.</th>
-            <th scope="col">Employee's Id</th>
-            <th scope="col">Employee's Name</th>
-            <th scope="col">Employee's Email</th>
-            <th scope="col">Salary in Rs.</th>
+            <th scope="col">State Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">PPA</th>
             </tr>
         </thead>
         <tbody>
-        <?php while( $emp_info = mysqli_fetch_assoc($emp_) ){
-                    $emp_id = $emp_info["id"];
-                    $emp_name = $emp_info["name"];
-                    $emp_email = $emp_info["email"];
-                    $emp_salary = $emp_info["salary"];
+        <?php while( $corp_info = mysqli_fetch_assoc($corp_) ){
+                    $corp_id = $corp_info["statecode"];
+                    $corp_name = $corp_info["name"];
+                    $corp_email = $corp_info["email"];
+                    $corp_ppa = $corp_info["ppa"];
                     ?>
             <tr>
             <th ><?php echo "$i. "; ?></th>
-            <th ><?php echo $emp_id; ?></th>
-            <td><?php echo $emp_name; ?></td>
-            <td><?php echo $emp_email; ?></td>
-            <td><?php echo $emp_salary; ?></td>
+            <th ><?php echo $corp_id; ?></th>
+            <td><?php echo $corp_name; ?></td>
+            <td><?php echo $corp_email; ?></td>
+            <td><?php echo $corp_ppa; ?></td>
             </tr>
 
           <?php  

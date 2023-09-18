@@ -15,6 +15,10 @@
     height: 100%;
     margin: 0;
     }
+    .yh{
+      background-color:green;
+      color:white;
+    }
 
 .bg {
   background-image: url("nyscBackground.jpg");
@@ -46,12 +50,12 @@
 
                                   <div class="btn-toolbar justify-content-between">
                                         <div class="btn-group">
-                                            <a href="employee/dashboard.php" class="btn btn-primary btn-lg">Log-in As Corp Member </a>
+                                            <a href="employee/dashboard.php" class="btn  yh btn-lg">Log-in As Corp Member </a>
                                         </div>
 
                                         <div class="btn-group">
                                         
-                                            <a href="admin/dashboard.php" class="btn btn-primary btn-lg">Log-In As Admin</a>
+                                            <a href="admin/dashboard.php" class="btn yh btn-lg">Log-In As Admin</a>
                                         </div>
                                        
                                     </div>
